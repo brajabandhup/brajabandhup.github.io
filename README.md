@@ -1,17 +1,16 @@
 # Portfolio site
 
-Personal website of Brajabandhu Pradhan. One static file (`index.html`), no build step.
+Personal website of Brajabandhu Pradhan, live at https://brajabandhup.github.io. Static, no build step.
 
-## Put it online with GitHub Pages
+- `index.html`: the whole page (markup, styles and a small script).
+- `media/`: the hero loop, the two films (1080p) and the render stills.
 
-1. Create a GitHub account if you don't have one. Your username becomes the address.
-2. Create a new **public** repository named exactly `<username>.github.io`.
-3. Upload `index.html` and this `README.md` (Add file → Upload files → Commit).
-4. Open Settings → Pages and check that the source is "Deploy from a branch", branch `main`, folder `/ (root)`.
-5. After a minute or two the site is live at `https://<username>.github.io`.
+## Publishing
+
+GitHub Pages serves the `main` branch from the repository root. A push to `main` is live within a minute or two.
 
 ## Editing
 
-Everything is in `index.html`. Each section is marked with an `id` (`research`, `structures`, `software`, `publications`, `path`, `toolkit`, `interests`, `contact`). Colours and fonts are the variables at the top of the `<style>` block.
+Each section in `index.html` is marked with an `id` (`research`, `films`, `structures`, `software`, `publications`, `path`, `toolkit`, `interests`, `contact`). Colours and fonts are the variables at the top of the `<style>` block.
 
-To add a photo, put `photo.jpg` next to `index.html` and add an `<img src="photo.jpg" alt="Brajabandhu Pradhan">` in the About section.
+To preview locally, run `python3 -m http.server` in this folder and open the address it prints. Opening `index.html` directly also works, but the videos load more reliably from a server.
