@@ -11,22 +11,23 @@
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://brajabandhup.github.io/">
 <meta property="og:site_name" content="Brajabandhu Pradhan">
-<meta property="og:image" content="https://brajabandhup.github.io/media/hero-loop.jpg">
-<meta property="og:image:width" content="1920">
-<meta property="og:image:height" content="1080">
+<meta property="og:image" content="https://brajabandhup.github.io/media/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Brajabandhu Pradhan, protein biochemist and structural biologist">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="author" content="Brajabandhu Pradhan">
 <link rel="canonical" href="https://brajabandhup.github.io/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person",
 "name":"Brajabandhu Pradhan","alternateName":["Braja Pradhan","B. Pradhan"],"honorificSuffix":"PhD",
-"url":"https://brajabandhup.github.io/","image":"https://brajabandhup.github.io/media/hero-loop.jpg",
+"url":"https://brajabandhup.github.io/","image":"https://brajabandhup.github.io/media/portrait.jpg",
 "jobTitle":"FWO Postdoctoral Fellow",
 "description":"Protein biochemist and structural biologist working on amyloid fibrils, bacterial protein fibres and cryo-EM.",
 "affiliation":{"@type":"Organization","name":"VIB-KU Leuven Center for Neuroscience"},
 "alumniOf":[{"@type":"CollegeOrUniversity","name":"Vrije Universiteit Brussel"},{"@type":"CollegeOrUniversity","name":"National Institute of Science Education and Research (NISER) Bhubaneswar"}],
 "knowsAbout":["Cryo-electron microscopy","Amyloid","Protein aggregation","Structural biology","Protein biochemistry"],
-"sameAs":["https://orcid.org/0000-0001-5732-6675","https://www.linkedin.com/in/brajabandhu-pradhan","https://github.com/brajabandhup"]}}
+"sameAs":["https://orcid.org/0000-0001-5732-6675","https://scholar.google.com/citations?user=PFusjV0AAAAJ","https://www.linkedin.com/in/brajabandhu-pradhan","https://github.com/brajabandhup"]}}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101a2e'/%3E%3Cpath d='M4 16c4-9 8-9 12 0s8 9 12 0' fill='none' stroke='%23e0a04a' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M4 16c4 9 8 9 12 0s8-9 12 0' fill='none' stroke='%23f4f1ea' stroke-width='3' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,6 +112,8 @@ section{padding:88px 0 0}
 .sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.15;margin:0;letter-spacing:-.01em;text-wrap:balance}
 .about{display:grid;grid-template-columns:200px 1fr;gap:28px}
 .about .body{max-width:66ch}
+.about .side{display:flex;flex-direction:column;gap:18px}
+.portrait{display:block;width:100%;max-width:200px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--paper-2)}
 .about p{margin:0 0 18px}
 
 /* research cards */
@@ -218,6 +221,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid color-mix(in srgb,c
   .sec-head,.about,.pubs li,.path li{grid-template-columns:1fr;gap:6px}
   .cards,.soft,.cols,.cols.two{grid-template-columns:1fr}
   .gallery,.films{grid-template-columns:1fr}
+  .portrait{max-width:150px}
   .gallery figure,.gallery figure:nth-child(-n+2){grid-column:auto}
   .card .shot{aspect-ratio:2/1}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -249,8 +253,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid color-mix(in srgb,c
 <div class="hero">
   <div class="landing">
     <video id="loop" muted loop playsinline autoplay preload="auto" poster="media/hero-loop.jpg" aria-label="Render of a blue amyloid-β fibril with gold medin chains beside it, from my film on medin and amyloid-β">
+      <source src="media/hero-loop-phone.mp4" type="video/mp4" media="(max-width: 700px)">
       <source src="media/hero-loop.mp4" type="video/mp4">
     </video>
+    <script>if(matchMedia('(max-width: 700px)').matches) document.getElementById('loop').poster = 'media/hero-loop-phone.jpg';</script>
     <div class="wrap">
       <div class="mono up">Protein biochemist · Structural biologist · Ghent, Belgium</div>
       <h1><span class="w" style="--i:0">I</span> <span class="w" style="--i:1">study</span> <span class="w" style="--i:2">how</span> <span class="w" style="--i:3">proteins</span> <span class="w" style="--i:4"><em>assemble</em>,</span> <span class="w" style="--i:5">and</span> <span class="w" style="--i:6">what</span> <span class="w" style="--i:7">happens</span> <span class="w" style="--i:8">when</span> <span class="w" style="--i:9">they</span> <span class="w" style="--i:10">do</span> <span class="w" style="--i:11">it</span> <span class="w" style="--i:12">badly.</span></h1>
@@ -277,7 +283,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid color-mix(in srgb,c
 
 <section id="about">
   <div class="wrap about">
-    <div class="mono">About</div>
+    <div class="side">
+      <div class="mono">About</div>
+      <img class="portrait" src="media/portrait.jpg" width="480" height="600" loading="lazy" alt="Brajabandhu Pradhan">
+    </div>
     <div class="body">
       <p>My whole career has circled one question: how do proteins recognise each other, and what do the assemblies they build look like? I started in plant biology at NISER Bhubaneswar, moved to bacterial surface fibres for my PhD in Han Remaut's lab in Brussels, and since 2023 I have worked on disease amyloids in the Switch Lab of Frederic Rousseau and Joost Schymkowitz in Leuven.</p>
       <p>I like owning a problem from the first workplan to the final figure: producing the protein, measuring binding and aggregation, solving the structure, and using modelling to decide which experiment to do next. In both my PhD and postdoc labs I set up the cryo-EM workflow from scratch, and I enjoy teaching it to others.</p>
@@ -514,7 +523,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid color-mix(in srgb,c
         </div>
       </li>
     </ul>
-    <p class="note">The full, current list is on <a href="https://orcid.org/0000-0001-5732-6675">ORCID</a>.</p>
+    <p class="note">The full, current list is on <a href="https://scholar.google.com/citations?user=PFusjV0AAAAJ">Google Scholar</a> and <a href="https://orcid.org/0000-0001-5732-6675">ORCID</a>.</p>
   </div>
 </section>
 
@@ -579,6 +588,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid color-mix(in srgb,c
     <div class="links">
       <a class="btn solid" href="mailto:brajabandhup@gmail.com">Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/brajabandhu-pradhan">LinkedIn</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=PFusjV0AAAAJ">Google Scholar</a>
       <a class="btn" href="https://orcid.org/0000-0001-5732-6675">ORCID</a>
     </div>
     <footer>
