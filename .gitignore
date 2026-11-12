@@ -1,0 +1,6 @@
+# Private working notes: never publish
+CLAUDE.md
+.claude/
+
+.DS_Store
+_check-*.html
