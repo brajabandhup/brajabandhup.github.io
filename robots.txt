@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brajabandhup.github.io/sitemap.xml
